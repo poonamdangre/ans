@@ -1,0 +1,12 @@
+- name: register value
+  hosts: all
+  tasks: 
+  - name: get hostname
+    shell: hostnam
+    register: URL
+  - name: print hostname
+    debug: 
+      msg: "hello cloud"
+  - name: print hostname
+    debug: 
+      msg: "cloudy weather"    
