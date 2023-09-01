@@ -1,11 +1,11 @@
 - name: register value
   hosts: all
   tasks: 
-  - name: get hostname
+  - name: gethostname
     shell: hostnam
     register: URL
     ignore_error: true
-  - name: print hostname
+  - name: printhostname
     debug: 
       msg: "hello cloud"
   - name: print hostname
