@@ -4,7 +4,7 @@
   - name: get hostname
     shell: hostnam
     register: URL
-      ignore_error: true
+      ignore_errors: true
   - name: print hostname
     debug: 
       msg: "hello cloud"
