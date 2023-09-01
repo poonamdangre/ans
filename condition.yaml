@@ -1,11 +1,11 @@
 - name: condition
- hosts: all
- tasks:
- - name: centos
-   debug:
-     msg: "this is centos"
-   when: ansible_distribution == "centos"
+  hosts: all
+  tasks:
+  - name: centos
+    debug:
+      msg: "this is centos"
+    when: ansible_distribution == "centos"
   - name: ubuntu
-   debug:
+    debug:
      msg: "this is ubuntu"
-   when: ansible_distribution == "cubuntu"
+    when: ansible_distribution == "cubuntu"
