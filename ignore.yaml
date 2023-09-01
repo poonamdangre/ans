@@ -1,13 +1,13 @@
 - name: register value
   hosts: all
   tasks: 
-  - name: gethostname
-    shell: hostnam
-    register: URL
-    ignore_error: true
-  - name: printhostname
-    debug: 
-      msg: "hello cloud"
-  - name: print hostname
-    debug: 
-      msg: "cloudy weather"    
+   - name: gethostname
+     shell: hostnam
+     register: URL
+     ignore_error: true
+   - name: printhostname
+     debug: 
+       msg: "hello cloud"
+   - name: print hostname
+     debug: 
+       msg: "cloudy weather"    
