@@ -3,7 +3,7 @@
   tasks:
   - name: printlist
     debug:
-      msg: {{item}}
+      msg: "{{item}}"
       loop:
       - apple
       - banana
