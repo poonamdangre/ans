@@ -1,4 +1,4 @@
-name: loop for automating multiple task
+- name: loop for automating multiple task
   hosts: all
   tasks:
   - name: printlist
@@ -7,4 +7,3 @@ name: loop for automating multiple task
        loop:
          - apple
          -banana
-         -mango
