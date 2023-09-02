@@ -1,5 +1,6 @@
 - name: root privilage
   hosts: all
+  become: true
   tasks:
   - name: install httpd
     yum:
