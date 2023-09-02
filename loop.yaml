@@ -1,10 +1,11 @@
 - name: loop for automating multiple task
   hosts: all
+  become: true
   tasks:
   - name: printlist
-    debug:
-      msg: "{{item}}"
+    yum:
+     msg: "{{item}}"
       loop:
-      - apple
-      - banana
-      - mango
+      - httpd
+      - wget
+      - vim
