@@ -5,7 +5,7 @@
   - name: printlist
     yum:
      msg: "{{item}}"
-      loop:
+     loop:
       - httpd
       - wget
       - vim
