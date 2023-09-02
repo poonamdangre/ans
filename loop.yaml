@@ -1,0 +1,10 @@
+name: loop for automating multiple task
+  hosts: all
+  tasks:
+  - name: printlist
+    debug:
+      msg: "{{item}}"
+       loop:
+         - apple
+         -banana
+         -mango
