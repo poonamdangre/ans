@@ -3,7 +3,7 @@
   tasks:
   - name: install httpd
     apt:
-     name: install httpd
+     name:  httpd
      state: latest
   - name: start httpd
     systemd:
