@@ -6,5 +6,5 @@
       msg: "{{item}}"
       loop:
       - apple
-      -banana
-      -mango
+      - banana
+      - mango
