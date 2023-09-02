@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: install httpd
-    yum:
+    dnf:
      name:  httpd
      state: latest
   - name: start httpd
