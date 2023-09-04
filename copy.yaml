@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: install apache2
-    yum:
+    apt:
      name:  apache2
      state: latest
   - name: start apache2
