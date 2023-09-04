@@ -1,13 +1,13 @@
 - name: my web server
   hosts: all
   tasks:
-  - name: install httpd
-    dnf:
-     name:  httpd
+  - name: install apache2
+    yum:
+     name:  apache2
      state: latest
-  - name: start httpd
+  - name: start apache2
     systemd:
-      name: httpd
+      name: apache2
       state: restarted
       enable: true
   - name: deployment
