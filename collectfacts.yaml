@@ -2,5 +2,5 @@
   hosts: all
   tasks:
   - name: collext os name
-   debug: 
-     msg: "{{ansible_distribution}}"
+    debug: 
+      msg: "{{ansible_distribution}}"
