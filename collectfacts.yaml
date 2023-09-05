@@ -1,6 +1,6 @@
 - name: gathering fact from web server
   hosts: all
   tasks:
-  - name: collext os name
+  - name: collect os name
     debug: 
       msg: "{{ansible_distribution}}"
