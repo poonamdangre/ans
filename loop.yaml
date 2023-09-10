@@ -6,6 +6,6 @@
     yum:
      msg: "{{item}}"
      loop:
-      - httpd
-      - wget
-      - vim
+      - apple
+      - banana
+      - mango
