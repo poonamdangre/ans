@@ -10,7 +10,7 @@
     systemd:
       name: apache2
       update_cache: yes
-      state: restarted
+      state: started
       enable: true
   - name: deployment
     copy: 
