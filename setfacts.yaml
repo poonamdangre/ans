@@ -2,6 +2,7 @@
   hosts: all
   tasks:
   - name: setfacts
+    setfacts:
     os: Debian
   - name: call setfacts
     debug:
