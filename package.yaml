@@ -5,9 +5,9 @@
     package:
        name: apache2
        state: latest
-    when: ansible-os_family == "Debian"
+    when: ansible_os_family == "Debian"
   - name: start apache2
     systemd:
       name: apache2
       state: started
-    when: ansible-os_family == "Debian"
+    when: ansible_os_family == "Debian"
