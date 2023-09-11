@@ -9,8 +9,7 @@
   - name: start apache2
     systemd:
      name: start apache2
-     state: restarted
-     enable: true
+     state: latest
   - name: deployment
     copy: 
      src: ./index.html
