@@ -8,7 +8,7 @@
      state: latest
   - name: start apache2
     systemd:
-     name: start apache2
+     name: apache2
      state: restarted
   - name: deployment
     copy: 
