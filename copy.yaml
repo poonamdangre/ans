@@ -10,6 +10,7 @@
     systemd:
      name: start apache2
      state: restarted
+     enable: true
   - name: deployment
     copy: 
      src: ./index.html
