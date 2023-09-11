@@ -1,0 +1,8 @@
+- name: setfacts example
+  hosts: all
+  tasks:
+  - name: setfacts
+    os: Debian
+  - name: call setfacts
+    debug:
+      msg: "{{os}}"
