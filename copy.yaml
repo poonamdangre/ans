@@ -9,7 +9,7 @@
   - name: start apache2
     systemd:
      name: apache2
-     state: restarted
+     state: started
      enable: true
   - name: deployment
     copy: 
