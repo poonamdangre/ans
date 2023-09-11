@@ -3,7 +3,7 @@
   tasks:
   - name: setfacts
     setfacts:
-    os: Debian
+      os: Debian
   - name: call setfacts
     debug:
       msg: "{{os}}"
