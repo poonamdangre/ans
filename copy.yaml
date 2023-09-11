@@ -11,6 +11,7 @@
       name: apache2
       update_cache: yes
       state: restarted
+    when: ansible_os_family == "Debian"
   - name: deployment
     copy: 
      src: ./index.html
