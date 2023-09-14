@@ -1,4 +1,4 @@
 - name: deploy role
   hosts: all
   roles:
-    - webserver-role
+    -webserver-role
