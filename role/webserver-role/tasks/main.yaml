@@ -2,7 +2,7 @@
  package:
    name: "{{PKG}}"
    state: present
--name: deploy webpage
+- name: deploy webpage
  copy:
    src: index.html
    dest: /var/www/html/index.html
