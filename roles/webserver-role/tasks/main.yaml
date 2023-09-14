@@ -10,4 +10,4 @@
   systemd:
     name: "{{PKG}}"
     state: restarted
-    enable: true
+    enabled: true
