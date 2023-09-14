@@ -1,9 +1,9 @@
 - name: install httpd
- package:
+  package:
    name: "{{PKG}}"
    state: present
 - name: deploy webpage
- copy:
+  copy:
    src: index.html
    dest: /var/www/html/index.html
 - name: start service
