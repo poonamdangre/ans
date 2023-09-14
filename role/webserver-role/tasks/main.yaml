@@ -1,0 +1,13 @@
+- name: install httpd
+ package:
+   name: "{{PKG}}"
+   state: present
+-name: deploy webpage
+ copy:
+   src: index.html
+   dest: /var/www/html/index.html
+- name: start service
+  systemd:
+    name: "{{PKG}}"
+    state: restarted
+    enabled: true
