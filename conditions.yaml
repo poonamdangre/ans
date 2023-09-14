@@ -1,0 +1,12 @@
+- name: condition
+  hosts: all
+  tasks:
+  - name: print centos
+    debug: 
+      msg: "this is centos"
+    when: ansible_distribution=="Centos"
+  - name: print ubuntu
+    debug: 
+      msg: "this is ubuntu"
+    when: ansible_distribution == "Ubuntu" or ansible_distribution_version == "7.9"
+    
